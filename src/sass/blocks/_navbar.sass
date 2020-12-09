@@ -1,0 +1,30 @@
+.navbar
+  padding: 8px 0
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  
+  &__avatar
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    background: url('../img/avatar.jpg') no-repeat
+    background-size: cover
+
+  &__panel
+    width: 50%
+    height: 50px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    
+  &__panel a
+    text-decoration: none
+    color: $text-color
+    text-transform: uppercase
+    font-size: 12px
+
+  &__panel a:hover
+    color: #FF6F28
+    transition: 0.5s
