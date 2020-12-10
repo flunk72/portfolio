@@ -1,3 +1,5 @@
+*
+  box-sizing: border-box
 body
   +light
 .container
@@ -10,4 +12,13 @@ body
   .container
     width: 580px
     width: 90%
-    
+.section
+  padding: 50px 0
+  &-line
+    background: #cccccc
+    width: 100px
+    height: 1px
+    margin: 30px auto
+  &-title
+    +bold
+    margin: auto

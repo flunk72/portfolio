@@ -7,96 +7,90 @@
   <title>Портфолио</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="css/animate.compat.css">
 </head>
 <body>
-  <section class="home">
+  <section id="home" class="home">
       <div class="home-block">
         <div class="home-intro">
           <div class="home-text">Hello, my name is Sergey Eromchenko and i am</div>
           <h1>Frontend-Developer</h1>
         </div>
-        <a href="#services">
+        <a href="#works">
           <div class="arrow-down">
             <span></span>
           </div>
         </a>
       </div>
   </section>
-  <nav class="navbar">
+  <nav class="navbar section">
     <div class="container">
       <div class="navbar-block">
         <div class="navbar__avatar"></div>
         <div class="navbar__panel">
-          <a href="#" class="navbar__home">Домой</a>
-          <a href="#" class="navbar__work">Мои работы</a>
-          <a href="#" class="navbar__skills">Мои умения</a>
-          <a href="#" class="navbar__contact">Контакты</a>
+          <a href="#home" class="navbar__home">Домой</a>
+          <a href="#works" class="navbar__work">Мои работы</a>
+          <a href="#skills" class="navbar__skills">Мои умения</a>
+          <a href="#contact" class="navbar__contact">Контакты</a>
         </div>
       </div>
     </div>
   </nav>
   <main>
-    <section class="hero">
+    <section id="works" class="hero section">
       <div class="container">
         <div class="hero-block">
-          <div class="hero-text">
-            <h1 class="hero-text__title">Мои работы</h1>
-          </div>
-          <div class="hero-line"></div>
+          <h1 class="section-title">Мои работы</h1>
+          <div class="section-line"></div>
           <div class="hero-works">
-            <div class="hero-works__elem"></div>
-            <div class="hero-works__elem"></div>
-            <div class="hero-works__elem"></div>
-            <div class="hero-works__elem"></div>
-            <div class="hero-works__elem"></div>
-            <div class="hero-works__elem"></div>
+            <div class="hero-works__elem wow fadeInLeft"></div>
+            <div class="hero-works__elem wow fadeInLeft"></div>
+            <div class="hero-works__elem wow fadeInLeft"></div>
+            <div class="hero-works__elem wow fadeInRight" data-wow-delay="0.2s"></div>
+            <div class="hero-works__elem wow fadeInRight" data-wow-delay="0.2s"></div>
+            <div class="hero-works__elem wow fadeInRight" data-wow-delay="0.2s"></div>
           </div>
         </div>
       </div>
     </section>
-    <section class="skills">
+    <section id="skills" class="skills section">
       <div class="container">
         <div class="skills-block">
-          <div class="skills-text">
-            <h1 class="skills-text__title">Мои умения</h1>
-          </div>
-          <div class="skills-line"></div>
+          <h1 class="section-title">Мои навыки</h1>
+          <div class="section-line"></div>
           <div class="skills-section">
-            <div class="skills-section__elem">
-              HTML/CSS/SCSS
+            <div class="skills-section__elem wow rollIn">
+              <span>HTML/CSS/SCSS</span> 
             </div>
-            <div class="skills-section__elem">
-              JavaScript
+            <div class="skills-section__elem wow rollIn" data-wow-delay="0.2s">
+              <span>JavaScript</span>
             </div>
-            <div class="skills-section__elem">
-              React
+            <div class="skills-section__elem wow rollIn" data-wow-delay="0.4s">
+              <span>React</span>
             </div>
-            <div class="skills-section__elem">
-              Redux
+            <div class="skills-section__elem wow rollIn" data-wow-delay="0.6s">
+              <span>Redux</span>
             </div>
-            <div class="skills-section__elem">
-              TypeScript
+            <div class="skills-section__elem wow rollIn" data-wow-delay="0.8s">
+              <span>TypeScript</span>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="offer">
+    <section id="contact" class="offer section">
       <div class="container">
         <div class="offer-block">
-          <div class="offer-text">
-              <h1 class="offer-text__title">Связаться со мной</h1>
-          </div>
-          <div class="offer-line"></div>
-          <div class="offer-contact">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <button class="btn-send">
+          <h1 class="section-title">Связаться со мной</h1>
+          <div class="section-line"></div>
+          <form action="" class="form offer__form">
+            <input type="text" class="input offer__input" placeholder="Ваше имя">
+            <input type="email" class="input offer__input" placeholder="Ваш e-mail">
+            <textarea name="" id="" cols="30" rows="10" class="offer__textarea" placeholder="Введите сообщение"></textarea>
+            <button class="button offer__button">
               Отправить сообщение
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </section>
